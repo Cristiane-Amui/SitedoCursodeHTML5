@@ -6,21 +6,30 @@
 }
 
 body {
+    font-family: Arial, sans-serif;
     background-color: #dddddd;
     color: rgba(0, 0, 0, 1);  
 }
 
 div#interface {
     width: 900px;
-    background-color: #fff;
+    background-color: #fff; /* cor do fundo */
     margin: -20px auto 0px auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5); /* sombra */
     padding: 10px; /* espaço do texto para a magem */
 }
 
 p {
     text-align: justify;
     text-indent: 50px;
+}
+
+a {                  /* edição de links */
+    color: #606060;
+    text-decoration: none;
+}
+a:hover {              /* edição de links - quando passa o mouse por cima */
+    text-decoration: underline;
 }
 
 header#cabecalho img#icone {
@@ -128,12 +137,54 @@ section#corpo {
     padding-right: 15px;
 }
 
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.direita {
+    text-align: right;
+}
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #fff;
+    margin: 0px;
+    }
+header#cabecalho-artigo h3 {
+    font-size: 12px;
+    color: #606060;
+
+}
+/* Formatação da parte lateral da página */
 aside#lateral {
     display: block;
     width: 350px;
     float: right;
 }
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    }
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #fff;
+    padding: 5px;
+}
 
+/* Formatação da tabela */
 table#tabelaspec {
     border: 1px solid #606060;
     border-spacing: 0px;  /* espaço entre as células */
@@ -144,6 +195,32 @@ table#tabelaspec {
 table#tabelaspec td {
     border: 1px solid #606060;
     padding: 10px; /* padding é o espaço interno */
+}
+
+table#tabelaspec td.ce {
+    color: #fff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold; /* negrito */
+    text-align: right;
+    }
+
+table#tabelaspec td.cd {
+    background-color: #cecece;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13px;
+    font-weight: bolder; /* negrito */
+}
+
+table#tabelaspec caption span {
+    display: block; /* bloco flutuante, desconectado do texto */
+    float: right;
+    color: #000;
+    font-size: 8pt;
+    margin-top: 10px;
 }
 
 footer#rodape {
